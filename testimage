@@ -1,0 +1,5 @@
+FROM node:9
+WORKDIR /usr/src/app
+RUN npm install cowsay knock-knock-jokes
+COPY cowsay-knockknock.js ./
+CMD node cowsay-knockknock.js
