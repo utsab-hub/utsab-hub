@@ -40,17 +40,17 @@ on:
 env:
   ACR_RESOURCE_GROUP: lomba-rg1
   AZURE_CONTAINER_REGISTRY: aksorderlomba1registry
-  CONTAINER_NAME: image-workflow-1745827875598
+  CONTAINER_NAME: image-workflow-1745828985343
   CLUSTER_NAME: aks-order-lomba1
   CLUSTER_RESOURCE_GROUP: lomba-rg1
   CLUSTER_RESOURCE_TYPE: Microsoft.ContainerService/managedClusters
   DEPLOYMENT_MANIFEST_PATH: |
-    manifests/configmap.yaml
-    manifests/deployment.yaml
-    manifests/service.yaml
+    ./manifests/configmap.yaml
+    ./manifests/deployment.yaml
+    ./manifests/service.yaml
   DOCKER_FILE: ./testimage
   BUILD_CONTEXT_PATH: ./
-  NAMESPACE: namespace-workflow-1745827875598
+  NAMESPACE: namespace-workflow-1745828985343
   ENABLENAMESPACECREATION: false
   AUTH_TYPE: SERVICE_PRINCIPAL
 
