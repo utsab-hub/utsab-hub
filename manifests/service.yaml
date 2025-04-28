@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apachetest
+  namespace: namespace-workflow-1745827875598
+  labels:
+    app.kubernetes.io/name: apachetest
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: apachetest
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
