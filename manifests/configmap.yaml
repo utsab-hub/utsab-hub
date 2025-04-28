@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: apachetest-config
+  namespace: namespace-workflow-1745827875598
+  labels:
+    app.kubernetes.io/name: apachetest
+    kubernetes.azure.com/generator: devhub
+data:
